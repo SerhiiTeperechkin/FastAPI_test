@@ -359,6 +359,21 @@ files = [
 ]
 
 [[package]]
+name = "password-strength"
+version = "0.0.3.post2"
+description = "Password strength and validation"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "password_strength-0.0.3.post2-py2.py3-none-any.whl", hash = "sha256:6739357c2863d707b7c7f247ff7c6882a70904a18d12c9aaf98f8b95da176fb9"},
+    {file = "password_strength-0.0.3.post2.tar.gz", hash = "sha256:bf4df10a58fcd3abfa182367307b4fd7b1cec518121dd83bf80c1c42ba796762"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "psycopg2-binary"
 version = "2.9.11"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
@@ -631,6 +646,18 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "six"
+version = "1.17.0"
+description = "Python 2 and 3 compatibility utilities"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+groups = ["main"]
+files = [
+    {file = "six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"},
+    {file = "six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"},
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.48"
 description = "Database Abstraction Library"
@@ -780,4 +807,4 @@ typing-extensions = ">=4.12.0"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.14"
-content-hash = "1c0aaa95921b6206b6f407b837d026e66afc3d01dd701f5bf14bf1c5ce5c6bf3"
+content-hash = "e2ab5bcf03518a398e9f5efb6ae5fd55a953a614720d3b6812320b4b7d8ac88d"
