@@ -9,7 +9,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
-    && pip install --no-cache-dir poetry uvicorn fastapi \
+    && pip install --no-cache-dir poetry uvicorn fastapi 'pydantic[email]' \
     && poetry config virtualenvs.create false
 
 COPY pyproject.toml poetry.lock /app/
